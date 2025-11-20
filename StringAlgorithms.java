@@ -6,8 +6,13 @@ public class StringAlgorithms {
      * a String where each character is placed on its own line.
      */
     public static String printCharacters(String word) {
-        // TODO: Implement this method
-        return "";
+      String returning = "";
+      int len = word.length();
+      for (int i = 0; i < len; i++) {
+        returning += word.charAt(i);
+        if (i != len - 1) returning += "\n";
+      }
+      return returning;
     }
 
 
@@ -66,7 +71,7 @@ public class StringAlgorithms {
         
         System.out.println("Testing printCharacters:");
         // Example:
-        // System.out.println(printCharacters("hello"));
+        System.out.println(printCharacters("hello"));
 
         System.out.println("\nTesting reverseWord:");
         // Example:
