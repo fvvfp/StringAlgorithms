@@ -6,11 +6,18 @@ public class StringAlgorithms {
      * a String where each character is placed on its own line.
      */
     public static String printCharacters(String word) {
+//       String returning = "";
+//       int len = word.length();
+//       for (int i = 0; i < len; i++) {
+//         returning += word.charAt(i);
+//         if (i != len - 1) returning += "\n";
+//       }
+//       return returning;
+
       String returning = "";
       int len = word.length();
       for (int i = 0; i < len; i++) {
-        returning += word.charAt(i);
-        if (i != len - 1) returning += "\n";
+        returning += word.charAt(i) + "\n";
       }
       return returning;
     }
